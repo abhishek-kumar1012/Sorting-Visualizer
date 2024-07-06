@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Number of Elements:</p>
+                <input id="a_size" type="range" min=10 max=150 step=1 value=20>
+                <p>Speed of Visualization:</p>
+                <input id="a_speed" type="range" min=3 max=20 step=1 value=4>
+                <button type="button" class="btn btn-outline-success" id="a_generate">Generate New Array!!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting Visualizer</p>
+
+                <div class="algos">
+                    <button type="button" class="btn btn-outline-success">Bubble</button>
+                    <button type="button" class="btn btn-outline-success">Selection</button>
+                    <button type="button" class="btn btn-outline-success">Insertion</button>
+                    <button type="button" class="btn btn-outline-success">Merge</button>
+                    <button type="button" class="btn btn-outline-success">Quick</button>
+                    <button type="button" class="btn btn-outline-success">Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+        <div id="Info_Cont1">
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+        </div>
+    </section>
+
+    <footer id="footer">
+        <a class = "footer-link" href="https://github.com/abhishek-kumar1012"><i class="footer-icon fab fa-github"></i></a>
+        <a class = "footer-link" href="https://www.linkedin.com/in/abhishek-kumar-8b502122a/"><i class="footer-icon fab fa-linkedin"></i></a>
+        <a class = "footer-link" href="mailto:abhishek10122000@gmail.com"><i class="footer-icon fas fa-envelope"></i></a>
+        <p>© Copyright  Abhishek Kumar</p>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/visualizations.js"></script>
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+</html>
